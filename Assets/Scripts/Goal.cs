@@ -8,5 +8,7 @@ public class Goal : MonoBehaviour {
     void OnTriggerEnter(Collider c)
     {
         goal.Play(); // I don't think I'm forgetting anything...
+        // Oh yeah... remove the ball!
+        GameObject.Destroy(c.gameObject);
     }
 }
